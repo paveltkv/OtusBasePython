@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page_title|default:"Channels" }}</title>
+</head>
+<body>
+
+{% block menu %}
+    <a href="{% url 'main' %}">To home</a>
+{% endblock %}
+{% block main_content %}
+{% endblock %}
+
+</body>
+</html>

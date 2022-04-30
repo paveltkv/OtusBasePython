@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TvGuide</title>
+</head>
+<body>
+<h1>Channels</h1>
+<ul>
+    {% for ch in all_channels %}
+        <li>
+            <a href="{% url 'channel_detail' ch.pk %}">
+                {{ ch.name }}
+            </a>
+        </li>
+    {% endfor %}
+</ul>
+<p>
+    <a href="{% url 'channel_create' %}">add channel</a>
+</p>
+</body>
+</html>
